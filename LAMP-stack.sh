@@ -20,3 +20,6 @@ mysql> flush privileges				# (then, repeat select statement from above)
 mysql> exit
 sudo mysql 							# (should fail)
 mysql -u root -p 						# (should work normally)
+
+# Install PyMysql
+sudo pip3 install pymysql
