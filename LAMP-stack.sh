@@ -23,3 +23,21 @@ mysql -u root -p 						# (should work normally)
 
 # Install PyMysql
 sudo pip3 install pymysql
+
+# Install Apache2
+sudo apt install apache2
+
+# Register Python with Apache, enable multi-processing module and allow CGI scripts to run
+sudo a2dismod mpm_event
+sudo a2enmod mpm_prefork cgi
+sudo systemctl restart apache2
+
+# Modify Apache
+sudo nano /etc/apache2/sites-enabled/000-default.conf
+
+# Add the following right after the first line, which reads “<VirtualHost *:80\>” using tabs for indentation, not just spaces
+<Directory /var/www/test>
+  Options +ExecCGI
+  DirectoryIndex index.py
+</Directory>
+AddHandler cgi-script .py									# [note the space!]
