@@ -11,3 +11,12 @@ sudo apt install python3-pip
 # MySQL is a very popular database.  MariaDB is the open source fork from it
 sudo apt install mysql-server
 sudo mysql_secure_installation
+
+$> sudo mysql
+mysql> select user, authentication_string, plugin, host from mysql.user;
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'NewPassword';					# (NewPassword is one that you make up)
+
+mysql> flush privileges				# (then, repeat select statement from above)
+mysql> exit
+sudo mysql 							# (should fail)
+mysql -u root -p 						# (should work normally)
