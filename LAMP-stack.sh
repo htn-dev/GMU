@@ -47,3 +47,5 @@ AddHandler cgi-script .py									# [note the space!]
 
 sudo systemctl restart apache2
 
+# http://localhost/ page should have been changed
+
