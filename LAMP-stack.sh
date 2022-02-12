@@ -36,8 +36,11 @@ sudo systemctl restart apache2
 sudo nano /etc/apache2/sites-enabled/000-default.conf
 
 # Add the following right after the first line, which reads “<VirtualHost *:80\>” using tabs for indentation, not just spaces
+# Tell Apache to work from the test directory, that it contains executables, that index.py is the default
 <Directory /var/www/test>
   Options +ExecCGI
   DirectoryIndex index.py
 </Directory>
 AddHandler cgi-script .py									# [note the space!]
+
+
