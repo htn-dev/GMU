@@ -45,4 +45,5 @@ AddHandler cgi-script .py									# [note the space!]
 
 # Change “DocumentRoot /var/www/html” into “DocumentRoot /var/www/test” in the same document
 
+sudo systemctl restart apache2
 
