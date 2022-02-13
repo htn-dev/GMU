@@ -49,3 +49,19 @@ sudo systemctl restart apache2
 
 # http://localhost/ page should have been changed
 
+# CREATE A DATABASE
+mysql -u root -p
+
+mysql> CREATE DATABASE yoga;
+mysql> USE yoga
+
+# Create a table and add some values:
+mysql> create table instructors (id INT, name VARCHAR(20));
+mysql> insert into instructors values (1, ‘Erin’);
+mysql> insert into instructors values (2, ‘Caroline’);
+mysql> insert into instructors values (3, ‘<put your name here>’);
+
+# Test your table
+test your table:  mysql> select * from instructors;
+quit
+
