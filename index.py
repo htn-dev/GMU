@@ -14,6 +14,7 @@ con = pymysql.connect(
 	  user=’root’,
   passwd=’yourpassword’,
   host=’localhost’)
+
 #print contents
 try:
     with con.cursor() as cur:
