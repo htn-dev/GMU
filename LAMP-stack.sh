@@ -50,7 +50,6 @@ sudo systemctl restart apache2
 
 # CREATE A DATABASE
 mysql -u root -p
-
 mysql> CREATE DATABASE yoga;
 mysql> USE yoga
 
