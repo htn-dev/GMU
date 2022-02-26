@@ -3,6 +3,7 @@
 # Debug mode on
 import cgitb
 cgitb.enable()
+
 #Print html headers
 print (“Content-Type: text/html\n\n”)
 
