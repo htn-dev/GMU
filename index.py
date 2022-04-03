@@ -23,4 +23,5 @@ try:
 		  for row in rows:
 			  print(f’{row[0]} {row[1]}’)
 finally:
+	
 	con.close()
