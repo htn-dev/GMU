@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 # Debug mode on
 import cgitb
 cgitb.enable()
