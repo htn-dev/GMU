@@ -6,6 +6,7 @@ cgitb.enable()
 
 #Print html headers
 print (“Content-Type: text/html\n\n”)
+
 #Connect to the db
 import pymysql
 con = pymysql.connect(
