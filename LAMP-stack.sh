@@ -1,4 +1,5 @@
 sudo apt update
+
 sudo apt upgrade
 
 # create a symbolic link to python 3
